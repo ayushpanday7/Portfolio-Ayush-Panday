@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    font-size: 10px;
+}
+.content::before{
+    content: "";
+    background-image: url("res/HomeBG.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -99999;
+}
+.content{
+
+    color: #fff;
+}
+.naviationBar{
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    padding: 1rem;
+}
+.navationItem{
+    padding: 1rem auto;
+    width: 10rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    justify-self: right;
+    text-align: center;
+}
+.logo{
+    font-family: cursive;
+    font-size: 2.4rem;
+    margin: 1rem 3rem;
+    margin-right: 50%;
+}
+.activeNaviation{
+    border-bottom: 0.2rem solid white;
+}
+
+.info{
+    margin-top: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.infotext{
+    padding: 1rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font-size: 6rem;
+    font-family: monospace;
+    letter-spacing: 0.7rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.about{
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+}
+.image{
+    box-shadow: 0.1rem .1rem 0.7rem rgb(189, 189, 189);
+    /* overflow: hidden; */
+    width: fit-content;
+    margin-right: 10rem;
+}
+.image img{
+    width: 25rem;
+    object-fit: cover;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.linkbtn{
+    margin: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(142, 221, 255);
+}
+
+
+@media (max-width:1000px) {
+    :root{
+        font-size: 9px;
+    }
+    .main{
+        margin: 5rem;
+    }
+}
+
+@media (max-width:700px) {
+    :root{
+        font-size: 8px;
+    }
+    .main{
+        margin: 8rem;
+    }
+}
+
+@media (max-width:700px) {
+    :root{
+        font-size: 8px;
+    }
+    .main{
+        margin: 8rem;
+    }
+}
+@media (max-width:530px) {
+    :root{
+        font-size: 5px;
+    }
+    .main{
+        padding: 1rem;
+    }
+}
+
+@media (max-width:300px) {
+    :root{
+        font-size: 1.4vw;
+    }
+    .main{
+        padding: 1rem;
+    }
+}
+
+@media (min-width:1500px) {
+    :root{
+        font-size: 0.7vw;
+    }
+    .main{
+        padding: 1rem;
+    }
+}
